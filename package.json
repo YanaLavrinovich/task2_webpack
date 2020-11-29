@@ -1,0 +1,37 @@
+{
+  "name": "hw2_webpack",
+  "version": "1.0.0",
+  "description": "Creating an application using a webpack",
+  "main": "index.js",
+  "scripts": {
+    "start:prod": "cross-env NODE_ENV=production node_modules/.bin/webpack-dev-server -p",
+    "start:dev": "cross-env NODE_ENV=development node_modules/.bin/webpack-dev-server --watch",
+    "build:prod": "cross-env NODE_ENV=production node_modules/.bin/webpack -p",
+    "build:dev": "cross-env NODE_ENV=development node_modules/.bin/webpack",
+    "test": "jest"
+  },
+  "author": "Yana Laurynovich",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
+    "@babel/preset-react": "^7.12.7",
+    "babel-loader": "^8.2.2",
+    "cross-env": "^7.0.2",
+    "css-loader": "^5.0.1",
+    "file-loader": "^6.2.0",
+    "html-loader": "^1.3.2",
+    "html-webpack-plugin": "^4.5.0",
+    "image-webpack-loader": "^7.0.1",
+    "jest": "^26.6.3",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-redux": "^7.2.2",
+    "react-router": "^5.2.0",
+    "redux": "^4.0.5",
+    "style-loader": "^2.0.0",
+    "webpack": "^4.26.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  }
+}
